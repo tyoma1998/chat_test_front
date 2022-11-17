@@ -1,0 +1,29 @@
+.wrapperUsers {
+  width: 200px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgb(69, 127, 251);
+  padding: 10px;
+}
+
+.wrapperRoom,
+.holderAdditionalUsers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.listMessage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.wrapperUsers {
+  width: 200px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgb(69, 127, 251);
+}

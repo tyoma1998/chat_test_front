@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 600px;
+  height: 600px;
+  display: flex;
+}
+
+.wrapperChat {
+  width: 400px;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgb(156, 182, 237);
+}
+
+.wrapperChat {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
