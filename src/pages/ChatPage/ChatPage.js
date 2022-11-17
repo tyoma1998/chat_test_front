@@ -30,7 +30,9 @@ function ChatPage() {
 
   const loadRoomsInfo = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/rooms/${roomId}`);
+      const response = await axios.get(
+        `${process.env.REACT_APP_DOMAIN}/rooms/${roomId}`
+      );
       setUsers(response.data.users);
       setMessages(response.data.messages);
     } catch (error) {

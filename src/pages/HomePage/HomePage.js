@@ -24,7 +24,7 @@ function HomePage() {
   const onLogin = async () => {
     try {
       setIsLoading(true);
-      await axios.post("http://localhost:8000/rooms", data);
+      await axios.post(`${process.env.REACT_APP_DOMAIN}/rooms`, data);
       socket.emit("ROOM:JOIN", data);
       handleChangeUser(data.userName);
       setIsLoading(false);
