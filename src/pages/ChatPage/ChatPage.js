@@ -60,7 +60,7 @@ function ChatPage() {
   return (
     <div className={st.container}>
       <div className={st.wrapper}>
-        <ChatInfo users={users} />
+        <ChatInfo users={users} roomId={roomId} />
 
         <div className={st.wrapperChat}>
           <MessangeList messages={messages} />

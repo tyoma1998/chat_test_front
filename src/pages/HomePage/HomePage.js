@@ -56,7 +56,9 @@ function HomePage() {
           onChange={(e) => handleChange("roomId", e)}
           placeholder="Room"
         />
-        <Button onClick={onLogin}>Enter</Button>
+        <Button onClick={onLogin} disabled={!data.userName || !data.roomId}>
+          Enter
+        </Button>
       </div>
     </div>
   );
